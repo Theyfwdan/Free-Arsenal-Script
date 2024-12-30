@@ -141,7 +141,7 @@ RAFBButton = GuiLibrary.TextButton({
     Position = UDim2.new(0.518, 0, 0.25, 0),
     Size = UDim2.new(0.446, 0, 0.25, 0),
     ["Font"] = Enum.Font.GothamBold,
-    Text = "Reset after full bag",
+    Text = "Reset after bag full",
     TextColor3 = Color3.new(0, 0, 0),
     TextScaled = true,
     ZIndex = 2,
@@ -199,7 +199,7 @@ end
 function AntiAFKButton()
 	if not AntiAfkState then
 		AntiAfkState = true
-		AntiAfkButton.TextColor3 = Color3.new(0, 1, 0)
+		AntiAfkButton.TextColor3 = Color3.new(1, 0.2, 0.4)
 		AntiAFK()
 	else
 		AntiAfkState = false
@@ -212,7 +212,7 @@ function StartAutofarmButtonC()
 	if not AutofarmStarted then
 		AutofarmStarted = true
 		AutofarmIN = true
-		StartAutofarmButton.TextColor3 = Color3.new(0, 1, 0)
+		StartAutofarmButton.TextColor3 = Color3.new(1, 0.2, 0.4)
 	else
 		AutofarmStarted = false
 		StartAutofarmButton.TextColor3 = Color3.new(0, 0, 0)
@@ -236,7 +236,7 @@ function ImproveFPSButtonC()
 				end
 			end
 		end
-		ImproveFPSButton.TextColor3 = Color3.new(0, 1, 0)
+		ImproveFPSButton.TextColor3 = Color3.new(1, 0.2, 0.4)
 	else
 		ImproveFPSenabled = false
 		ImproveFPSButton.TextColor3 = Color3.new(0, 0, 0)
@@ -259,7 +259,7 @@ ResetWhenFullBag = false
 function RWFBButtonC()
 	if not ResetWhenFullBag then
 		ResetWhenFullBag = true
-		RAFBButton.TextColor3 = Color3.new(0, 1, 0)
+		RAFBButton.TextColor3 = Color3.new(1, 0.2, 0.4)
 	else
 		ResetWhenFullBag = false
 		RAFBButton.TextColor3 = Color3.new(0, 0, 0)
